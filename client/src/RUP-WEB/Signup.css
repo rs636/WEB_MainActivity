@@ -1,0 +1,38 @@
+
+.inp{ /*input칸*/
+    width:200px; /*너비 조절*/
+}
+
+.formdiv{ /*input앞의 텍스트들*/
+    display: inline-block; /*div쓰면 원래 줄 변경되는데 개행없도록*/
+    width: 70px;
+}
+
+.inpText{ /*아이디와 비밀번호 아래 설명 div*/
+    color:gray;
+    font-size: 11px;
+}
+
+#mainSignup{ /*화면 전체 div*/
+    padding-left: 42%; /*안쪽 왼쪽 여백 42%로 가운데로 당겨줌*/
+    /*text-align:center; 해버리면 글자크기 차이때문에 이상해짐*/
+
+}
+
+#checkId{ /*아이디 중복체크 버튼*/
+    color:white;
+    background-color: rgb(123, 172, 119);
+    border: none;
+}
+
+#Signup{ /*가입하기 버튼*/
+    background-color: green;
+    color:white;
+    border: none;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover{ /*모든 버튼 마우스 오버시*/
+    cursor: pointer;
+}

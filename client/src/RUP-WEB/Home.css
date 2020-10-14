@@ -1,0 +1,62 @@
+*{margin: 0px; padding:0px;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+ul{list-style-type: none;}
+a{text-decoration: none; color:black;}
+
+/*처음부터 다시 만들자!*/
+
+#bannerTop{ /*배너 전체*/
+    text-align: center;
+    display: inline-block;
+
+    position:fixed; /* 스크롤 쓰거나 크기 작아져도 위치 고정*/
+    top:0px;
+    height: 30px;
+    
+    margin-left: calc(-45vw + 45%);
+    width:100vw; /*부모 크기와 상관없이 100%로 화면 채우도록*/
+    
+    background-color:greenyellow;
+    white-space: nowrap; /*공백을 개행으로 취급하지 않음*/
+}
+
+#bannerTop>li{
+    position: relative;
+    text-align: center;
+}
+
+.topmenu{ /*맨위의 고정배너-로고, 회사소개, 등록, 채용, 문의, 마이페이지*/
+    display: inline-block; /*요소는 줄바꿈되지 않지만 내부는 박스*/
+    width: 120px;
+}
+
+.submenu{
+    position: absolute;
+    top: 28px;
+    display:none; /*처음에 숨겨놓음*/
+    width: 120px;
+    height: 140px;
+    background-color: green;
+    box-shadow: 3px 3px 2px inset; /*박스 안쪽 위에 그림자 생기도록*/
+}
+
+#bannerTop:hover .submenu{ /*마우스오버 시 서브메뉴보이게*/
+    display: block;
+}
+
+.scrollContent{ /*컨텐츠 스크롤 구현*/
+    margin-top:50px;
+    width: 100%;
+    height: 100vw; /*아래로 백퍼센트 채워주기*/
+}
+
+#navigator{ /*우측 중단 네비게이터*/
+    position: fixed;
+    top: 200px;
+    right: 80px;
+}

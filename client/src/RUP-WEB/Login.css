@@ -1,0 +1,16 @@
+#mainLogin{ /*로그인 화면 전체*/
+    padding-left: 42%; 
+}
+
+.divLogin{/*input앞의 텍스트들*/
+    display: inline-block; /*div쓰면 원래 줄 변경되는데 개행없도록*/
+    width: 70px;
+}
+
+#btnLogin{/*로그인 버튼*/
+    background-color: green;
+    color:white;
+    border: none;
+    width: 100px;
+    height: 25px;
+}
