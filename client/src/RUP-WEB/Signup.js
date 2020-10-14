@@ -52,8 +52,6 @@ const Signup = () => {
         //아이디 중복체크(DB와 연동)
         //진혁승
     }
-
-    
     const onSubmit=(e)=>{
         e.preventDefault();
         if(!regId.test(id)){ //정규식에 안맞으면
